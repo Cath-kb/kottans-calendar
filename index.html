@@ -6,60 +6,127 @@
 	<title>Kottans Web Calendar</title>
 	<meta name="description" content="The HTML5 Herald">
 	<meta name="author">
-	<style type="text/css">
-	body {
-		margin:40px
-		auto;max-width:650px;
-		line-height:1.6;
-		font-size:16px;
-		color: #444;
-		padding:0 10px;
-	}
-	h1,h2,h3 { 
-		line-height:1.2
-	}
-	</style>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 	<main>
 		<h1>КАЛЕНДАРЬ KOTTANS WEB</h1>
-		<section>
-			<h2>Будущие встречи:</h2>
-			<article>
-				<h1><time datetime="2017-03-04 11:00">4 марта</time></h1>
-				<p>Место: офис <cite>Cogniance</cite>, 3 этаж</p>
-				<p>Время: с 11 часов</p>
-				<p>Встреча для работы в группах над учебными проектами.</p>
-			</article>
-			<article>
-				<h1><time datetime="2017-03-11 11:00">11 марта</time> - <strong>предварительно</strong></h1>
-				<p>Место: офис <cite>Cogniance</cite></p>
-				<p>Время: с 11:00</p>
-				<ol>
-					<li>О работе на фрилансе - практический опыт</li>
-					<li>О работе с API и аутентификацией - лекция Андрея Серкова (@viattik)</li>
-					<li>О спецификации CSS Grid Layout - доклад Олега Алешкина (@AleshaOleg)</li>
-				</ol>
-			</article>
-		</section>
-		<section>
-			<h2>Прошедшие встречи:</h2>
-			<article>
-				<h1><time datetime="2017-02-25 11:00">25 февраля</time></h1>
-				<p>Семинар Ивана Титаренко (@zonzujiro) о колбеках, промисах и работе с DOM</p>
-				<ul>
-					<li>
-						<a href="http://telegra.ph/Ok-let-mi-spik-from-maj-hart-02-12">Информация</a>
-					</li>
-					<li>
-						<a href="https://github.com/zonzujiro/kottans-web-workshop">Репозиторий с кодом</a>
-					</li>
-					<li>
-					<a href="https://www.youtube.com/watch?v=pfbOaT_h9Fo&list=PLtlE-9CY43ZgXQNd619n2YDAACMGtRivW">Видео</a> 
-					</li>
-				</ul>
-			</article>
-		</section>
+		<div class="tabs">
+			<div class="tab">	
+				<input type="radio" id="tab-1" name="tabgroup-1" checked>	
+				<label for="tab-1">Будущие встречи</label>
+				<section class="content">
+					<strong>Информация предварительная. Следите за обновлениями в gitter-чате.</strong>
+					<article>
+						<h1><time datetime="2017-03-11 11:00">11 марта</time></h1>
+						<p>Место: офис <cite>Cogniance</cite></p>
+						<p>Время: с 11:00</p>
+						<ol>
+							<li>О работе на фрилансе - практический опыт</li>
+							<li>О работе с API и аутентификацией - лекция Андрея Серкова (@viattik)</li>
+							<li>О спецификации CSS Grid Layout - доклад Олега Алешкина (@AleshaOleg)</li>
+						</ol>
+					</article>
+					<article>
+						<h1><time datetime="2017-03-18 11:00">18 марта</time></h1>
+						<p>Место: офис <cite>Cogniance</cite></p>
+						<p>Время: с 11:00</p>
+						<ol>
+							<li>ООП в JavaScript - продолжение</li>
+							<li>Работа над учебными проектами</li>
+						</ol>
+					</article>
+					<article>
+						<h1><time datetime="2017-03-25 11:00">25 марта</time></h1>
+						<p>Место: офис <cite>Cogniance</cite></p>
+						<p>Время: с 11:00</p>
+						<ol>
+							<li>Как работает аутентификация для SPA через соц-сети</li>
+							<li>Работа над учебными проектами</li>
+						</ol>
+					</article>
+					<article>
+						<h1><time datetime="2017-04-01 11:00">01 апреля</time></h1>
+						<p>Место: офис <cite>Cogniance</cite></p>
+						<p>Время: с 11:00</p>
+						<ol>
+							<li>JS: Замыкания</li>
+						</ol>
+					</article>
+					<article>
+						<h1><time datetime="2017-04-08 11:00">08 апреля</time></h1>
+						<p>Место: офис <cite>Cogniance</cite></p>
+						<p>Время: с 11:00</p>
+						<ol>
+							<li>JS: Методы массивов</li>
+							<li>Алгоритмы в JavaScript</li>
+						</ol>
+					</article>
+					<article>
+						<h1><time datetime="2017-04-15 11:00">15 апреля</time></h1>
+						<p>Место: офис <cite>Cogniance</cite></p>
+						<p>Время: с 11:00</p>
+						<ol>
+							<li>Паттерны в js </li>
+							<li>Базы данных (SQL and noSql) </li>
+						</ol>
+					</article>
+					<article>
+						<h1><time datetime="2017-04-22 11:00">22 апреля</time></h1>
+						<p>Место: офис <cite>Cogniance</cite></p>
+						<p>Время: с 11:00</p>
+						<ol>
+							<li>WebSockets</li>
+							<li>Уязвимости веб приложений </li>
+						</ol>
+					</article>
+					<article>
+						<h1><time datetime="2017-04-29 11:00">29 апреля</time></h1>
+						<p>Место: офис <cite>Cogniance</cite></p>
+						<p>Время: с 11:00</p>
+						<ol>
+							<li>UI/UX</li>
+						</ol>
+					</article>
+				</section>
+			</div>
+			<div class="tab">
+				<input type="radio" id="tab-2" name="tabgroup-1">
+				<label for="tab-2">Прошедшие встречи</label>
+				<section class="content">
+					<article>
+						<h1><time datetime="2017-03-04 11:00">4 марта</time></h1>
+						<p>Tooling</p>
+						<ul>
+							<li>
+								<a href="https://gist.github.com/sudodoki/3841f26d2a910716d126b2b0700cc1ba">Слайды</a>
+							</li>
+							<li>
+								<a href="https://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692">Дополнительные слайды</a>
+							</li>
+							<li>
+								<a href="http://www.objectplayground.com/">Курс <cite>Chrome Web Developer Tools<cite></a>
+							</li>
+						</ul>
+					</article>
+					<article>
+						<h1><time datetime="2017-02-25 11:00">25 февраля</time></h1>
+						<p>Семинар Ивана Титаренко (@zonzujiro) о колбеках, промисах и работе с DOM</p>
+						<ul>
+							<li>
+								<a href="http://telegra.ph/Ok-let-mi-spik-from-maj-hart-02-12">Информация</a>
+							</li>
+							<li>
+								<a href="https://github.com/zonzujiro/kottans-web-workshop">Репозиторий с кодом</a>
+							</li>
+							<li>
+								<a href="https://www.youtube.com/watch?v=pfbOaT_h9Fo&list=PLtlE-9CY43ZgXQNd619n2YDAACMGtRivW">Видео</a> 
+							</li>
+						</ul>
+					</article>
+				</section>
+			</div>
+		</div>
 	</main>
 </body>
 </html>
