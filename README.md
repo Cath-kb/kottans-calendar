@@ -1,6 +1,6 @@
 ###Kottans Web Course_1 Calendar
 
-[link](kottans.github.io/kottans-calendar)
+[link](http://kottans.org/kottans-calendar)
 
 Plans for upcoming meetings and related materials
 
